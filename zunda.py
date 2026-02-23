@@ -156,6 +156,7 @@ compile_program(
 
 print(llm.inspect_history(n=2))
 
+os.makedirs("./results/", exist_ok=True)
 compile_program.save(
     path="./results/",
     save_program=True
