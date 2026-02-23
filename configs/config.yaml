@@ -1,0 +1,18 @@
+vision_lm:
+  model: "gpt-4o-mini"
+  max_tokens: 1024
+image_generation:
+  model: "gpt-image-1"
+  size: "1024x1024"
+evaluation:
+  model: "gpt-4o-mini"
+optimizer:
+  num_candidates: 5
+  num_trials: 10
+  max_bootstrapped_demos: 1
+  max_labeled_demos: 3
+  num_threads: 4
+  minibatch_size: 5
+  minibatch_full_eval_steps: 3
+  copro_depth: 3
+  copro_breadth: 5

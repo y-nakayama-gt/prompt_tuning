@@ -1,0 +1,32 @@
+{
+  "describe.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "画像の特徴や要素を詳細に説明してください。具体的には、画像の対象物、色、形、テクスチャ、大きさ、構図、感情を喚起する要素、およびその他すべての掲載されている重要な詳細について明確かつ包括的に記述してください。これにより、提出された元画像と同一の画像を再生成できる情報を提供していただきます。",
+      "fields": [
+        {
+          "prefix": "Image:",
+          "description": "説明する画像"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "続きを記述してください。画像の重要な特徴を詳細に説明してください。",
+          "description": "画像の詳細な説明文"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.1.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}
